@@ -3,7 +3,7 @@
 
     // Function to update labels of text fields
     Materialize.updateTextFields = function() {
-      var input_selector = 'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], textarea';
+      var input_selector = 'input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], input.datepicker, input.timepicker, textarea';
       $(input_selector).each(function(index, element) {
         var $this = $(this);
         if ($(element).val().length > 0 || $(element).is(':focus') || element.autofocus || $this.attr('placeholder') !== undefined) {
